@@ -40,6 +40,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         print(lat)
         print(lng)
         
+        getAddressFromLocation(location: location)
+        
     }
 
     @IBAction func getLocation(_ sender: Any) {
@@ -48,6 +50,43 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
+    }
+    
+    func getAddressFromLocation( location: CLLocation){
+        
+        let clGeoCoder = CLGeocoder()
+        
+        clGeoCoder.reverseGeocodeLocation(location) { placeMarks, error in
+            
+            if error != nil {
+                print(error?.localizedDescription)
+                return
+            }
+            var address = ""
+            guard let place = placeMarks?.first else { return }
+            
+            if place.name != nil {
+                address += place.name! +  ", "
+            }
+            
+            if place.locality != nil {
+                address += place.locality! +  ", "
+            }
+            if place.subLocality != nil {
+                address += place.subLocality! +  ", "
+            }
+            
+            if place.postalCode != nil {
+                address += place.postalCode! +  ", "
+            }
+            
+            if place.country != nil {
+                address += place.country!
+            }
+            
+            print(address)
+            
+        }
     }
     
 }
