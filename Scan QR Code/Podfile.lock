@@ -1,0 +1,16 @@
+PODS:
+  - QR-Code-Scanner-iOS (1.0.0)
+
+DEPENDENCIES:
+  - QR-Code-Scanner-iOS (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - QR-Code-Scanner-iOS
+
+SPEC CHECKSUMS:
+  QR-Code-Scanner-iOS: 6633d5157a50467d66ab357af2432b576c702e5e
+
+PODFILE CHECKSUM: ae5564bbcd3c09f636212523a1d49fe933919e9f
+
+COCOAPODS: 1.11.3
