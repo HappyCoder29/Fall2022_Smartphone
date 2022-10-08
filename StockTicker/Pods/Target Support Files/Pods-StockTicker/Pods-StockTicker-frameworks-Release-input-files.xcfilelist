@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-StockTicker/Pods-StockTicker-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
