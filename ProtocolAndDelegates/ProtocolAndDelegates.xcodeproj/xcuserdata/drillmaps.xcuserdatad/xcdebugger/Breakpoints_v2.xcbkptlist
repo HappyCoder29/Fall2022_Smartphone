@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "07A48B11-8D2A-46F4-B52C-C8C8E39A6AC4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E94B8FC5-1F12-47FB-B44D-5DF4A6EA0103"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProtocolAndDelegates/SecondViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "setName(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E94B8FC5-1F12-47FB-B44D-5DF4A6EA0103 - bc13ecda1c0daaf7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProtocolAndDelegates.SecondViewController.setName(Any) -&gt; ()"
+                  moduleName = "ProtocolAndDelegates"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/drillmaps/Documents/Fall2022_SmartPhone/Fall2022_Smartphone/ProtocolAndDelegates/ProtocolAndDelegates/SecondViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "E94B8FC5-1F12-47FB-B44D-5DF4A6EA0103 - bc13ecda1c0daaf7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ProtocolAndDelegates.SecondViewController.setName(Any) -&gt; ()"
+                  moduleName = "ProtocolAndDelegates"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/drillmaps/Documents/Fall2022_SmartPhone/Fall2022_Smartphone/ProtocolAndDelegates/ProtocolAndDelegates/SecondViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "297">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
