@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  EquipmentMaintainance
+//  EquipmentManagement
 //
-//  Created by Drillmaps on 22/10/22.
+//  Created by Drillmaps on 28/10/22.
 //
 
 import UIKit
