@@ -202,6 +202,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Perform Maintainance"/>
                                         <connections>
                                             <action selector="performMaintainanceAction:" destination="7uv-j3-yDd" eventType="touchUpInside" id="xp5-f0-Eyf"/>
+                                            <segue destination="3q1-aJ-BlY" kind="show" identifier="segueMaintainance" id="pyN-rN-KEs"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -238,6 +239,110 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3CS-CY-YrC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1591.875" y="13.732394366197184"/>
+        </scene>
+        <!--Perform Maintainance-->
+        <scene sceneID="9rG-V5-AhF">
+            <objects>
+                <viewController id="3q1-aJ-BlY" customClass="PerformMaintainanceViewController" customModule="EquipmentManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IrA-7z-ZtZ">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHe-Wl-3cf">
+                                <rect key="frame" x="177" y="230" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="nVJ-xx-aKD">
+                                <rect key="frame" x="20" y="133" width="390" height="725"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnm-UE-tEy">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="63.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="U2q-CX-CYR">
+                                        <rect key="frame" x="0.0" y="66" width="390" height="63"/>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nature of Problem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8k-aI-Mqc">
+                                        <rect key="frame" x="0.0" y="132.33333333333331" width="390" height="63.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nature of problem" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KgL-O9-XL5">
+                                        <rect key="frame" x="0.0" y="198.66666666666669" width="390" height="63"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rectification Work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKb-dC-zha">
+                                        <rect key="frame" x="0.0" y="264.66666666666669" width="390" height="63.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rectification work" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dg-DU-A4V">
+                                        <rect key="frame" x="0.0" y="331" width="390" height="63"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remarks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlG-Qw-UvZ">
+                                        <rect key="frame" x="0.0" y="397" width="390" height="63.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Remarks" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chS-U1-xWl">
+                                        <rect key="frame" x="0.0" y="463.33333333333337" width="390" height="63"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSx-UT-sh4">
+                                        <rect key="frame" x="0.0" y="529.33333333333337" width="390" height="63.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Activity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lkk-kQ-tWw">
+                                        <rect key="frame" x="0.0" y="595.66666666666663" width="390" height="63"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuF-lx-2bG">
+                                        <rect key="frame" x="0.0" y="661.66666666666663" width="390" height="63.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitAction:" destination="3q1-aJ-BlY" eventType="touchUpInside" id="Foz-4a-ae4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="byG-Jp-vxa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="byG-Jp-vxa" firstAttribute="trailing" secondItem="nVJ-xx-aKD" secondAttribute="trailing" constant="20" id="7nk-nn-N70"/>
+                            <constraint firstItem="nVJ-xx-aKD" firstAttribute="leading" secondItem="byG-Jp-vxa" secondAttribute="leading" constant="20" id="IUD-di-6fz"/>
+                            <constraint firstItem="byG-Jp-vxa" firstAttribute="bottom" secondItem="nVJ-xx-aKD" secondAttribute="bottom" constant="40" id="bTB-pQ-nSa"/>
+                            <constraint firstItem="nVJ-xx-aKD" firstAttribute="top" secondItem="byG-Jp-vxa" secondAttribute="top" constant="30" id="dyj-P4-a5h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Perform Maintainance" id="3nV-eW-Yw3"/>
+                    <connections>
+                        <outlet property="datePicker" destination="U2q-CX-CYR" id="M94-xz-oB8"/>
+                        <outlet property="txtActivity" destination="lkk-kQ-tWw" id="meu-pw-No2"/>
+                        <outlet property="txtNatureOfProblem" destination="KgL-O9-XL5" id="8vk-Nu-cXb"/>
+                        <outlet property="txtRectificationWork" destination="0dg-DU-A4V" id="FXx-H0-cth"/>
+                        <outlet property="txtRemarks" destination="chS-U1-xWl" id="URs-qP-Mo9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ur-dt-O6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2653.953488372093" y="374.67811158798287"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wFF-tk-INp">

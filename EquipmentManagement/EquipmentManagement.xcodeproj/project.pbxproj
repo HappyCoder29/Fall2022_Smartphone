@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46569A25290DDAF200CA20A2 /* EquipmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46569A24290DDAF200CA20A2 /* EquipmentModel.swift */; };
+		46569A27290DE90700CA20A2 /* PerformMaintainanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46569A26290DE90700CA20A2 /* PerformMaintainanceViewController.swift */; };
 		46B1318A290BB6AE00343EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B13189290BB6AE00343EFD /* AppDelegate.swift */; };
 		46B1318C290BB6AE00343EFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B1318B290BB6AE00343EFD /* SceneDelegate.swift */; };
 		46B1318E290BB6AE00343EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B1318D290BB6AE00343EFD /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		41A25117CDC02D222499D8F2 /* Pods_EquipmentManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EquipmentManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46569A24290DDAF200CA20A2 /* EquipmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentModel.swift; sourceTree = "<group>"; };
+		46569A26290DE90700CA20A2 /* PerformMaintainanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformMaintainanceViewController.swift; sourceTree = "<group>"; };
 		46B13186290BB6AE00343EFD /* EquipmentManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EquipmentManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B13189290BB6AE00343EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46B1318B290BB6AE00343EFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		46569A21290DDA0C00CA20A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46569A24290DDAF200CA20A2 /* EquipmentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46569A22290DDA3400CA20A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46B1318D290BB6AE00343EFD /* ViewController.swift */,
+				46EA0B99290BC53A007AD60B /* DashboardViewController.swift */,
+				46569A26290DE90700CA20A2 /* PerformMaintainanceViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46569A23290DDA3E00CA20A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46B1318F290BB6AE00343EFD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		46B1317D290BB6AE00343EFD = {
 			isa = PBXGroup;
 			children = (
@@ -88,16 +118,16 @@
 		46B13188290BB6AE00343EFD /* EquipmentManagement */ = {
 			isa = PBXGroup;
 			children = (
+				46569A23290DDA3E00CA20A2 /* View */,
+				46569A22290DDA3400CA20A2 /* Controller */,
+				46569A21290DDA0C00CA20A2 /* Model */,
 				46EA0B92290BBFC4007AD60B /* Utilities */,
 				46B13189290BB6AE00343EFD /* AppDelegate.swift */,
 				46B1318B290BB6AE00343EFD /* SceneDelegate.swift */,
-				46B1318D290BB6AE00343EFD /* ViewController.swift */,
-				46B1318F290BB6AE00343EFD /* Main.storyboard */,
 				46B13192290BB6B000343EFD /* Assets.xcassets */,
 				46B13194290BB6B000343EFD /* LaunchScreen.storyboard */,
 				46B13197290BB6B000343EFD /* Info.plist */,
 				46B1319D290BB78400343EFD /* GoogleService-Info.plist */,
-				46EA0B99290BC53A007AD60B /* DashboardViewController.swift */,
 			);
 			path = EquipmentManagement;
 			sourceTree = "<group>";
@@ -230,6 +260,8 @@
 				46EA0B94290BBFDD007AD60B /* StringExtension.swift in Sources */,
 				46EA0B9A290BC53A007AD60B /* DashboardViewController.swift in Sources */,
 				46B1318E290BB6AE00343EFD /* ViewController.swift in Sources */,
+				46569A25290DDAF200CA20A2 /* EquipmentModel.swift in Sources */,
+				46569A27290DE90700CA20A2 /* PerformMaintainanceViewController.swift in Sources */,
 				46B1318A290BB6AE00343EFD /* AppDelegate.swift in Sources */,
 				46EA0B96290BC103007AD60B /* KeychainService.swift in Sources */,
 				46B1318C290BB6AE00343EFD /* SceneDelegate.swift in Sources */,
