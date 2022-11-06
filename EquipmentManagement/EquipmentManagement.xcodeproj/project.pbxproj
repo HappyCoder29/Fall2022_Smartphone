@@ -19,6 +19,9 @@
 		46EA0B94290BBFDD007AD60B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA0B93290BBFDD007AD60B /* StringExtension.swift */; };
 		46EA0B96290BC103007AD60B /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA0B95290BC103007AD60B /* KeychainService.swift */; };
 		46EA0B9A290BC53A007AD60B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA0B99290BC53A007AD60B /* DashboardViewController.swift */; };
+		46F0BCCF290F7ADD00F325A3 /* ViewHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F0BCCE290F7ADD00F325A3 /* ViewHistoryTableViewController.swift */; };
+		46F0BCD1290F7B3000F325A3 /* ViewHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F0BCD0290F7B3000F325A3 /* ViewHistoryTableViewCell.swift */; };
+		46F0BCD3290F7C1D00F325A3 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F0BCD2290F7C1D00F325A3 /* History.swift */; };
 		7DE8A429FEFD3D5CAE222B05 /* Pods_EquipmentManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A25117CDC02D222499D8F2 /* Pods_EquipmentManagement.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		46EA0B93290BBFDD007AD60B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		46EA0B95290BC103007AD60B /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		46EA0B99290BC53A007AD60B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		46F0BCCE290F7ADD00F325A3 /* ViewHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHistoryTableViewController.swift; sourceTree = "<group>"; };
+		46F0BCD0290F7B3000F325A3 /* ViewHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		46F0BCD2290F7C1D00F325A3 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		66232F805F932102A8A9E0AD /* Pods-EquipmentManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EquipmentManagement.release.xcconfig"; path = "Target Support Files/Pods-EquipmentManagement/Pods-EquipmentManagement.release.xcconfig"; sourceTree = "<group>"; };
 		75B4A4F8E0B13C5C9BF47A32 /* Pods-EquipmentManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EquipmentManagement.debug.xcconfig"; path = "Target Support Files/Pods-EquipmentManagement/Pods-EquipmentManagement.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				46569A24290DDAF200CA20A2 /* EquipmentModel.swift */,
+				46F0BCD2290F7C1D00F325A3 /* History.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +92,8 @@
 				46B1318D290BB6AE00343EFD /* ViewController.swift */,
 				46EA0B99290BC53A007AD60B /* DashboardViewController.swift */,
 				46569A26290DE90700CA20A2 /* PerformMaintainanceViewController.swift */,
+				46F0BCCE290F7ADD00F325A3 /* ViewHistoryTableViewController.swift */,
+				46F0BCD0290F7B3000F325A3 /* ViewHistoryTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -258,13 +267,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				46EA0B94290BBFDD007AD60B /* StringExtension.swift in Sources */,
+				46F0BCCF290F7ADD00F325A3 /* ViewHistoryTableViewController.swift in Sources */,
 				46EA0B9A290BC53A007AD60B /* DashboardViewController.swift in Sources */,
+				46F0BCD3290F7C1D00F325A3 /* History.swift in Sources */,
 				46B1318E290BB6AE00343EFD /* ViewController.swift in Sources */,
 				46569A25290DDAF200CA20A2 /* EquipmentModel.swift in Sources */,
 				46569A27290DE90700CA20A2 /* PerformMaintainanceViewController.swift in Sources */,
 				46B1318A290BB6AE00343EFD /* AppDelegate.swift in Sources */,
 				46EA0B96290BC103007AD60B /* KeychainService.swift in Sources */,
 				46B1318C290BB6AE00343EFD /* SceneDelegate.swift in Sources */,
+				46F0BCD1290F7B3000F325A3 /* ViewHistoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

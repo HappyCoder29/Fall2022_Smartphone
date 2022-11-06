@@ -89,5 +89,11 @@ class DashboardViewController: UIViewController {
             guard let serialNumber = txtSerialNumber.text else {return}
             secondVC.serialNumber = serialNumber
         }
+        
+        if segue.identifier == "segueViewHistory" {
+            let secondVC = segue.destination as! ViewHistoryTableViewController
+            guard let serialNumber = txtSerialNumber.text else {return}
+            secondVC.serialNumber = serialNumber
+        }
     }
 }
