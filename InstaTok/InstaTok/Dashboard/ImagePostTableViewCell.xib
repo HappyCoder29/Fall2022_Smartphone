@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="350" id="KGk-i7-Jjw" customClass="ImagePostTableViewCell" customModule="InstaTok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="326"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="326"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceNeedle" translatesAutoresizingMaskIntoConstraints="NO" id="tYy-g2-8C2">
+                        <rect key="frame" x="5" y="5" width="429" height="246"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQZ-I7-92x">
+                        <rect key="frame" x="25" y="256" width="389" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="y51-p7-6Mc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Exk-eP-09s">
+                        <rect key="frame" x="5" y="291" width="429" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HN-UO-t0W">
+                                <rect key="frame" x="0.0" y="0.0" width="65.333333333333329" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-6S-V6D">
+                                <rect key="frame" x="75.333333333333343" y="0.0" width="353.66666666666663" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="mnu-Fq-UZ2"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Exk-eP-09s" secondAttribute="bottom" constant="5" id="74G-w5-9uJ"/>
+                    <constraint firstAttribute="trailing" secondItem="Exk-eP-09s" secondAttribute="trailing" constant="5" id="MXC-1h-tU0"/>
+                    <constraint firstItem="tYy-g2-8C2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Pg6-BI-cN3"/>
+                    <constraint firstItem="Exk-eP-09s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Xrm-yg-CFp"/>
+                    <constraint firstItem="Exk-eP-09s" firstAttribute="top" secondItem="HQZ-I7-92x" secondAttribute="bottom" constant="5" id="iGI-P3-bHJ"/>
+                    <constraint firstItem="tYy-g2-8C2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="jRU-1w-jU5"/>
+                    <constraint firstItem="HQZ-I7-92x" firstAttribute="top" secondItem="tYy-g2-8C2" secondAttribute="bottom" constant="5" id="nUX-gw-dqP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HQZ-I7-92x" secondAttribute="trailing" constant="5" id="o6d-ko-YAb"/>
+                    <constraint firstItem="HQZ-I7-92x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="r2I-cN-da5"/>
+                    <constraint firstAttribute="trailing" secondItem="tYy-g2-8C2" secondAttribute="trailing" constant="5" id="xHK-S5-f5r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="caption" destination="ixl-6S-V6D" id="5iy-0k-Hgm"/>
+                <outlet property="dateTime" destination="ixl-6S-V6D" id="KaI-HP-Otb"/>
+                <outlet property="imgView" destination="tYy-g2-8C2" id="T3H-u0-bV2"/>
+                <outlet property="location" destination="8HN-UO-t0W" id="GCH-rV-KEG"/>
+            </connections>
+            <point key="canvasLocation" x="229.7709923664122" y="119.71830985915494"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="SpaceNeedle" width="612" height="408"/>
+    </resources>
+</document>
