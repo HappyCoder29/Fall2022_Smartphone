@@ -73,6 +73,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hqz-3g-p0N"/>
                     <connections>
+                        <outlet property="btnLogin" destination="HRM-yl-Zey" id="Tdz-uX-ueF"/>
                         <outlet property="lblStatus" destination="iFt-R9-TYa" id="sBX-lT-kiq"/>
                         <outlet property="txtEMail" destination="oDu-1X-DOF" id="gnC-gE-eM1"/>
                         <outlet property="txtPassword" destination="WET-eR-Fsl" id="to9-aG-78e"/>

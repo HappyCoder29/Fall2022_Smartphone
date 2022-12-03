@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  UITestLoginApp
+
+  Created by Drillmaps on 03/12/22.
+  
+*/
+"Email" = "ईमेल";
+"Password" = "पासवर्ड";
+"Login" = "लॉग इन करें";
+"Status" = "दर्जा";
+"Dashboard" = "डैशबोर्ड";

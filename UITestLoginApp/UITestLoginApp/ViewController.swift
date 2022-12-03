@@ -11,13 +11,18 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var txtEMail: UITextField!
     
+    @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var txtPassword: UITextField!
     
     @IBOutlet weak var lblStatus: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblStatus.text = ""
+        txtEMail.placeholder = strEmail
+        txtPassword.placeholder = strPassword
+        lblStatus.text = strStatus
+        btnLogin.setTitle(strLogin, for: .normal)
+
     }
 
     @IBAction func actionLogin(_ sender: Any) {
