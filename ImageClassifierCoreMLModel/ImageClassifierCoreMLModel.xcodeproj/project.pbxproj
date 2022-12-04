@@ -15,6 +15,7 @@
 		468F2F3A293C12970077BC93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468F2F38293C12970077BC93 /* LaunchScreen.storyboard */; };
 		468F2F42293C12D20077BC93 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 468F2F41293C12AA0077BC93 /* MobileNetV2.mlmodel */; };
 		468F2F46293C19AC0077BC93 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 468F2F45293C19AC0077BC93 /* Resnet50.mlmodel */; };
+		468F2F4A293C1E490077BC93 /* PizzaBurgerSaladModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 468F2F49293C1E490077BC93 /* PizzaBurgerSaladModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		468F2F3B293C12970077BC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		468F2F41293C12AA0077BC93 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		468F2F45293C19AC0077BC93 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		468F2F49293C1E490077BC93 /* PizzaBurgerSaladModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PizzaBurgerSaladModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				468F2F45293C19AC0077BC93 /* Resnet50.mlmodel */,
 				468F2F41293C12AA0077BC93 /* MobileNetV2.mlmodel */,
 				468F2F3B293C12970077BC93 /* Info.plist */,
+				468F2F49293C1E490077BC93 /* PizzaBurgerSaladModel.mlmodel */,
 			);
 			path = ImageClassifierCoreMLModel;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468F2F4A293C1E490077BC93 /* PizzaBurgerSaladModel.mlmodel in Sources */,
 				468F2F46293C19AC0077BC93 /* Resnet50.mlmodel in Sources */,
 				468F2F32293C12940077BC93 /* ViewController.swift in Sources */,
 				468F2F2E293C12940077BC93 /* AppDelegate.swift in Sources */,

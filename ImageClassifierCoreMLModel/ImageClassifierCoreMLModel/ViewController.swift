@@ -15,6 +15,7 @@ class ViewController: UIViewController,  UIImagePickerControllerDelegate, UINavi
     
     let mlModel = MobileNetV2().model
     let resnet50Model =  Resnet50().model
+    let pizzaBurgerSalad = PizzaBurgerSaladModel().model
     
     @IBOutlet weak var lblObject: UILabel!
     override func viewDidLoad() {
@@ -75,7 +76,7 @@ class ViewController: UIViewController,  UIImagePickerControllerDelegate, UINavi
         
         guard let ciimage = CIImage(image: image) else { return}
         
-        guard let model = try? VNCoreMLModel(for: resnet50Model) else {return}
+        guard let model = try? VNCoreMLModel(for: pizzaBurgerSalad) else {return}
         
         let request = VNCoreMLRequest(model: model) { (response, error ) in
             
